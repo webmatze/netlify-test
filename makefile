@@ -10,7 +10,7 @@ create_offline:
 	mkdir -p offline
 
 generate_html:
-	pandoc *.md -o public/index.html
+	./build_html.sh
 
 generate_pdf:
 	pandoc *.md -o offline/README.pdf
